@@ -70,13 +70,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
-# Busybox
-PRODUCT_PACKAGES += \
-    busybox
-
-PRODUCT_COPY_FILES += \
-$(LOCAL_PATH)/rootdir/etc/sbin/bb/busybox:root/sbin/bb/busybox
-
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8974 \
@@ -144,8 +137,8 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
     init.qcom.usb.rc \
-    ueventd.qcom.rc \
-    post_boot.sh
+    init.target.rc \
+    ueventd.qcom.rc 
 
 # Ramdisk for FeliCa
 PRODUCT_PACKAGES += \
